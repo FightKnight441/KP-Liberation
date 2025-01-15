@@ -431,7 +431,7 @@ class Params {
         title = $STR_PARAMS_DEBUG_CIVREP;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 0;
+        default = 1;
     };
     class DebugHighCommand {
         title = $STR_PARAM_DEBUG_HIGHCOMMAND;
