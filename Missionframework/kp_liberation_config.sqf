@@ -1,6 +1,7 @@
 /*
     CONFIG FILE FOR KP LIBERATION
     https://github.com/KillahPotatoes/KP-Liberation
+    this is a comment
 */
 
 // Vehicle classnames which also function as ACE medical vehicles.
