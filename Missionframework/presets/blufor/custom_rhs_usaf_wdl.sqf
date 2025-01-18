@@ -81,6 +81,7 @@ light_vehicles = [
     ["rhsusf_m998_w_2dr_halftop",75,0,100],                             // M1097 HMMWV 2Door
     ["rhsusf_m1151_m240_v1_usarmy_wd",125,25,100],                      // M1151 HMMWV M240
     ["rhsusf_m1043_w_m2",125,50,100],                                   // M1043 HMMWV .50
+    ["CUP_B_M1165_GMV_WDL_USA",125,75,100],                             // M1165 HMMWV Minigun
     ["CUP_B_nM1025_SOV_Mk19_USA_WDL",100,100,100],                      // M1025 Recon SOV Mk19
     ["CUP_B_nM1097_AVENGER_USA_WDL",100,250,100],                       // HMMWV AA Avenger
     ["rhsusf_m1240a1_m240_usmc_wd",175,100,100],                        // M1240 MRAP M240
@@ -108,8 +109,9 @@ heavy_vehicles = [
     ["CUP_B_LAV25M240_USMC",250,200,150],                               // LAV 25mm M240
     ["RHS_M2A3_wd",300,250,250],                                        // M2 Bradley
     ["RHS_M2A3_BUSKIII_wd",400,300,250],                                // M2 Bradley Up Armor
-    ["rhsusf_m1a2sep1wd_usarmy",400,400,350],                            // M1 Abrams
+    ["rhsusf_m1a2sep1wd_usarmy",400,400,350],                           // M1 Abrams
     ["rhsusf_m1a2sep1tuskiiwd_usarmy",500,400,400],                     // M1 Abrams Up Armor
+    ["rhsusf_mkvsoc",200,100,100],                                      // Mk V SOC Assault Boat
     ["CUP_B_LCU1600_USMC",200,0,100]                                    // Landing Craft
 ];
 
@@ -132,7 +134,10 @@ air_vehicles = [
 static_vehicles = [
     ["RHS_M2StaticMG_MiniTripod_WD",25,40,0],                           // Mk2 HMG .50
     ["RHS_M2StaticMG_WD",25,40,0],                                      // Mk2 HMG .50 (Raised)
+    ["B_HMG_01_A_F",50,40,0],                                           // .50 Auto Turret
+    ["CUP_B_M134_A_USMC",50,75,0],                                      // Minigun Auto Turret
     ["RHS_MK19_TriPod_WD",25,60,0],                                     // Mk19 GMG 20mm
+    ["B_GMG_01_A_F",50,60,0],                                           // 25mm GMG Auto Turret
     ["RHS_TOW_TriPod_WD",50,100,0],                                     // TOW (AT)
     ["RHS_Stinger_AA_pod_WD",50,100,0],                                 // Stinger (AA)
     ["RHS_M252_WD",80,150,0],                                           // Mk6 Mortar
@@ -351,6 +356,7 @@ blufor_squad_para = [
 */
 elite_vehicles = [
     "CUP_B_nM1097_AVENGER_USA_WDL",                                     // HMMWV AA Avenger
+    "CUP_B_M1165_GMV_WDL_USA",                                          // HMMWV Minigun
     "rhsusf_m1240a1_m2crows_usarmy_wd",                                 // M1277 MRAP .50 Crows
     "B_Boat_Armed_01_minigun_F",                                        // Speedboat Minigun
     "rhsusf_stryker_m1132_m2_wd",                                       // Stryker Minesweeper .50 Crows
