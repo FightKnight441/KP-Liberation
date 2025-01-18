@@ -453,6 +453,7 @@ blacklisted_from_arsenal = [
     "U_I_Protagonist_VR",
     "U_O_Protagonist_VR",
     "U_B_Protagonist_VR",
+    "U_C_Protagonist_VR",
     // ^ Special Purpose CSAT helmets + suits, VR sutis, have thermals and OP as hell
     // May god have mercy on me when Dave and Ravenhead discover they are blacklisted lol
     "MineDetector",
