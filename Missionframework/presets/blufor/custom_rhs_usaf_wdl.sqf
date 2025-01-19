@@ -20,16 +20,16 @@ FOB_typename = "Land_Cargo_HQ_V1_F";                                    // This 
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 FOB_truck_typename = "rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy";            // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
-Respawn_truck_typename = "rhsusf_M1230a1_usarmy_wd";   // This is the mobile respawn (and medical) truck.
-huron_typename = "rhsusf_M1078A1P2_B_WD_fmtv_usarmy";                                          // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+Respawn_truck_typename = "rhsusf_M1230a1_usarmy_wd";                    // This is the mobile respawn (and medical) truck.
+huron_typename = "rhsusf_M1078A1P2_B_WD_fmtv_usarmy";                   // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "rhsusf_army_ocp_combatcrewman";                    // This defines the crew for vehicles.
 pilot_classname = "rhsusf_army_ocp_helipilot";                          // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "rhsusf_m998_w_4dr";                  // These are the little birds which spawn on the Freedom or at Chimera base.
-KP_liberation_boat_classname = "B_Boat_Transport_01_F";                 // These are the boats which spawn at the stern of the Freedom.
+KP_liberation_little_bird_classname = "rhsusf_m998_w_4dr";              // These are the little birds which spawn on the Freedom or at Chimera base.
+KP_liberation_boat_classname = "CUP_B_RHIB_USMC";                       // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_wd";         // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_sand_F";     // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_sand_F";     // A large storage area for resources.
-KP_liberation_recycle_building = "Land_RepairDepot_01_tan_F";           // The building defined to unlock FOB recycling functionality.
+KP_liberation_recycle_building = "Land_RepairDepot_01_green_F";         // The building defined to unlock FOB recycling functionality.
 KP_liberation_air_vehicle_building = "B_Radar_System_01_F";             // The building defined to unlock FOB air vehicle functionality.
 KP_liberation_heli_slot_building = "Land_HelipadSquare_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KP_liberation_plane_slot_building = "Land_TentHangar_V1_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
@@ -89,7 +89,6 @@ light_vehicles = [
     ["rhsusf_M1230_M2_usarmy_wd",150,50,100],                           // MRAP Transport .50
     ["B_Truck_01_flatbed_F",10,10,100],                                 // HEMTT Flatbed
     ["B_Truck_01_fuel_F",10,10,100],                                    // HEMTT Fuel
-    ["CUP_B_TowingTractor_USA",25,0,25],                                // Towing Tractor
     ["CUP_B_RHIB_USMC",100,50,50],                                      // RHIB .50
     ["CUP_B_RHIB2Turret_USMC",100,100,50],                              // RHIB .50 Mk19
     ["CUP_I_LCVP_RACS",100,50,100],                                     // LCVP Landing Craft
@@ -149,9 +148,11 @@ buildings = [
     ["Land_Cargo_House_V1_F",0,0,0],
     ["Land_Cargo_Patrol_V1_F",0,0,0],
     ["Land_Cargo_Tower_V1_F",0,0,0],
+    ["Land_Cargo_House_V3_F",0,0,0],
+    ["Land_Cargo_Patrol_V3_F",0,0,0],
+    ["Land_Cargo_Tower_V3_F",0,0,0],
     ["Flag_NATO_F",0,0,0],
     ["Flag_US_F",0,0,0],
-    ["BWA3_Flag_Ger_F",0,0,0],
     ["Flag_UK_F",0,0,0],
     ["Flag_White_F",0,0,0],
     ["Land_Medevac_house_V1_F",0,0,0],
@@ -160,6 +161,8 @@ buildings = [
     ["CamoNet_BLUFOR_F",0,0,0],
     ["CamoNet_BLUFOR_open_F",0,0,0],
     ["CamoNet_BLUFOR_big_F",0,0,0],
+    ["ShedBig",0,0,0],
+    ["Shed",0,0,0],
     ["Land_PortableLight_single_F",0,0,0],
     ["Land_PortableLight_double_F",0,0,0],
     ["Land_LampSolar_F",0,0,0],
@@ -176,6 +179,9 @@ buildings = [
     ["Land_CampingTable_F",0,0,0],
     ["MapBoard_altis_F",0,0,0],
     ["MapBoard_stratis_F",0,0,0],
+    ["MapBoard_Malden_F",0,0,0],
+    ["MapBoard_Tanoa_F",0,0,0],
+    ["Land_MapBoard_Enoch_F",0,0,0],
     ["MapBoard_seismic_F",0,0,0],
     ["Land_Pallet_MilBoxes_F",0,0,0],
     ["Land_PaperBox_open_empty_F",0,0,0],
@@ -193,14 +199,25 @@ buildings = [
     ["Land_BarrelWater_grey_F",0,0,0],
     ["Land_WaterBarrel_F",0,0,0],
     ["Land_WaterTank_F",0,0,0],
+    ["ShootingRange_ACR",0,0,0],
+    ["Land_ShootingPos_Roof_01_F",0,0,0],
+    ["ShedSmall",0,0,0],
     ["Land_BagFence_Round_F",0,0,0],
     ["Land_BagFence_Short_F",0,0,0],
     ["Land_BagFence_Long_F",0,0,0],
     ["Land_BagFence_Corner_F",0,0,0],
     ["Land_BagFence_End_F",0,0,0],
+    ["Land_BagFence_01_round_green_F",0,0,0],
+    ["Land_BagFence_01_short_green_F",0,0,0], 
+    ["Land_BagFence_01_long_green_F",0,0,0], 
+    ["Land_BagFence_01_corner_green_F",0,0,0],
+    ["Land_BagFence_01_end_green_F",0,0,0], 
     ["Land_BagBunker_Small_F",0,0,0],
     ["Land_BagBunker_Large_F",0,0,0],
     ["Land_BagBunker_Tower_F",0,0,0],
+    ["Land_BagBunker_01_small_green_F",0,0,0],
+    ["Land_HBarrier_01_tower_green_F",0,0,0],
+    ["Land_BagBunker_01_large_green_F",0,0,0],
     ["Land_HBarrier_1_F",0,0,0],
     ["Land_HBarrier_3_F",0,0,0],
     ["Land_HBarrier_5_F",0,0,0],
@@ -210,6 +227,15 @@ buildings = [
     ["Land_HBarrierWall_corner_F",0,0,0],
     ["Land_HBarrierWall_corridor_F",0,0,0],
     ["Land_HBarrierTower_F",0,0,0],
+    ["Land_HBarrier_01_line_1_green_F",0,0,0],
+    ["Land_HBarrier_01_line_3_green_F",0,0,0],
+    ["Land_HBarrier_01_line_5_green_F",0,0,0],
+    ["Land_HBarrier_01_big_4_green_F",0,0,0],
+    ["Land_HBarrier_01_wall_4_green_F",0,0,0],
+    ["Land_HBarrier_01_wall_6_green_F",0,0,0],
+    ["Land_HBarrier_01_wall_corner_green_F",0,0,0],
+    ["Land_HBarrier_01_wall_corridor_green_F",0,0,0],
+    ["Land_HBarrier_01_big_tower_green_F",0,0,0],
     ["Land_CncBarrierMedium_F",0,0,0],
     ["Land_CncBarrierMedium4_F",0,0,0],
     ["Land_Concrete_SmallWall_4m_F",0,0,0],
@@ -220,7 +246,10 @@ buildings = [
     ["Land_Sign_WarningMilitaryArea_F",0,0,0],
     ["Land_Sign_WarningMilAreaSmall_F",0,0,0],
     ["Land_Sign_WarningMilitaryVehicles_F",0,0,0],
+    ["ACE_ConcertinaWire",0,0,0],
     ["Land_Razorwire_F",0,0,0],
+    ["Land_CzechHedgehog_01_old_F",0,0,0],
+    ["Wire",0,0,0],
     ["Land_ClutterCutter_large_F",0,0,0]
 ];
 
@@ -254,6 +283,7 @@ support_vehicles = [
     ["USAF_missileCart_Gbu31",50,150,0],                                // Missile Cart (GBU31)
     ["USAF_missileCart_GBU39",50,150,0],                                // Missile Cart (GBU39)
     ["USAF_missileCart_Mk82",50,150,0],                                 // Missile Cart (Mk82)
+    ["CUP_B_TowingTractor_USA",25,0,25],                                // Towing Tractor
     ["B_APC_Tracked_01_CRV_F",500,250,350],                             // CRV-6e Bobcat
     ["rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",325,0,75],                   // M977A4 Repair
     ["rhsusf_M978A4_BKIT_usarmy_wd",125,0,275],                         // M978A4 Fuel
