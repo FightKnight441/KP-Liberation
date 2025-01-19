@@ -35,7 +35,7 @@ opfor_fuel_truck = "rhsgref_ins_kraz255b1_fuel";                                
 opfor_ammo_truck = "rhsgref_ins_gaz66_r142";                                 // Tempest Ammo
 opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";             // Taru Fuel Pod
 opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";             // Taru Ammo Pod
-opfor_flag = "Flag_CSAT_F";                                             // Flag
+opfor_flag = "FlagCarrierINS";                                             // Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
