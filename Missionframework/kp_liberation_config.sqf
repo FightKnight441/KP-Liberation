@@ -445,7 +445,10 @@ blacklisted_from_arsenal = [
     "launch_O_Titan_ghex_F",
     "launch_O_Titan_short_F",
     "launch_O_Titan_short_ghex_F",
-    // ^ Titan Launchers, both compact (AT) and Full size (AA)
+    "Titan_AA",
+    "Titan_AP",
+    "Titan_AT",
+    // ^ Titan Launchers, both compact (AT) and Full size (AA), and their mags/ammo
     "H_HelmetO_ViperSP_hex_F",
     "H_HelmetO_ViperSP_ghex_F",
     "U_O_V_Soldier_Viper_F",
