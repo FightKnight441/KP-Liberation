@@ -35,7 +35,7 @@ opfor_fuel_truck = "rhsgref_ins_kraz255b1_fuel";                                
 opfor_ammo_truck = "rhsgref_ins_gaz66_r142";                                 // Tempest Ammo
 opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";             // Taru Fuel Pod
 opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";             // Taru Ammo Pod
-opfor_flag = "Flag_CSAT_F";                                             // Flag
+opfor_flag = "FlagCarrierINS";                                             // Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
@@ -114,9 +114,11 @@ opfor_troup_transports = [
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
+    "CUP_O_Mi8_CHDKZ"                // Mi-8
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-    "O_T_UAV_04_CAS_F"          // Air drone
+    "CUP_I_CESSNA_T41_ARMED_RACS",   // Mescalero
+    "RHSGREF_A29B_HIDF"              // Tucano
 ];
