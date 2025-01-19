@@ -114,9 +114,11 @@ opfor_troup_transports = [
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
+    "CUP_O_Mi8_CHDKZ"                // Mi-8
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-    "O_T_UAV_04_CAS_F"          // Air drone
+    "CUP_I_CESSNA_T41_ARMED_RACS",   // Mescalero
+    "RHSGREF_A29B_HIDF"              // Tucano
 ];
