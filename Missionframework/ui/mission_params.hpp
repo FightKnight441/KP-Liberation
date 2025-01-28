@@ -233,7 +233,7 @@ class Params {
         title = $STR_PARAMS_ARSENALUSEPRESET;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_NORESTRICTIONS, $STR_PARAMS_USEPRESET};
-        default = 0;
+        default = 1;
     };
     class MapMarkers {
         title = $STR_PARAMS_MAPMARKERS;
