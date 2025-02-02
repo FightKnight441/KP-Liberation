@@ -16,7 +16,7 @@
     The same classnames for different purposes may cause various unpredictable issues with player actions.
     Or not, just don't try!
 */
-FOB_typename = "Land_Cargo_HQ_V1_F";                                    // This is the main FOB HQ building.
+FOB_typename = "LAV25_HQ_unfolded";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 FOB_truck_typename = "rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy";            // This is the FOB as a vehicle.
 Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
@@ -145,12 +145,10 @@ static_vehicles = [
 ];
 
 buildings = [
+    ["Land_Cargo_HQ_V1_F",0,0,0],
     ["Land_Cargo_House_V1_F",0,0,0],
     ["Land_Cargo_Patrol_V1_F",0,0,0],
     ["Land_Cargo_Tower_V1_F",0,0,0],
-    ["Land_Cargo_House_V3_F",0,0,0],
-    ["Land_Cargo_Patrol_V3_F",0,0,0],
-    ["Land_Cargo_Tower_V3_F",0,0,0],
     ["Flag_NATO_F",0,0,0],
     ["Flag_US_F",0,0,0],
     ["Flag_UK_F",0,0,0],
@@ -202,31 +200,14 @@ buildings = [
     ["ShootingRange_ACR",0,0,0],
     ["Land_ShootingPos_Roof_01_F",0,0,0],
     ["ShedSmall",0,0,0],
-    ["Land_BagFence_Round_F",0,0,0],
-    ["Land_BagFence_Short_F",0,0,0],
-    ["Land_BagFence_Long_F",0,0,0],
-    ["Land_BagFence_Corner_F",0,0,0],
-    ["Land_BagFence_End_F",0,0,0],
     ["Land_BagFence_01_round_green_F",0,0,0],
     ["Land_BagFence_01_short_green_F",0,0,0], 
     ["Land_BagFence_01_long_green_F",0,0,0], 
     ["Land_BagFence_01_corner_green_F",0,0,0],
     ["Land_BagFence_01_end_green_F",0,0,0], 
-    ["Land_BagBunker_Small_F",0,0,0],
-    ["Land_BagBunker_Large_F",0,0,0],
-    ["Land_BagBunker_Tower_F",0,0,0],
     ["Land_BagBunker_01_small_green_F",0,0,0],
     ["Land_HBarrier_01_tower_green_F",0,0,0],
     ["Land_BagBunker_01_large_green_F",0,0,0],
-    ["Land_HBarrier_1_F",0,0,0],
-    ["Land_HBarrier_3_F",0,0,0],
-    ["Land_HBarrier_5_F",0,0,0],
-    ["Land_HBarrier_Big_F",0,0,0],
-    ["Land_HBarrierWall4_F",0,0,0],
-    ["Land_HBarrierWall6_F",0,0,0],
-    ["Land_HBarrierWall_corner_F",0,0,0],
-    ["Land_HBarrierWall_corridor_F",0,0,0],
-    ["Land_HBarrierTower_F",0,0,0],
     ["Land_HBarrier_01_line_1_green_F",0,0,0],
     ["Land_HBarrier_01_line_3_green_F",0,0,0],
     ["Land_HBarrier_01_line_5_green_F",0,0,0],
@@ -236,10 +217,12 @@ buildings = [
     ["Land_HBarrier_01_wall_corner_green_F",0,0,0],
     ["Land_HBarrier_01_wall_corridor_green_F",0,0,0],
     ["Land_HBarrier_01_big_tower_green_F",0,0,0],
+    ["GRAD_envelope_giant",0,0,0]
+    ["GRAD_envelope_long",0,0,0]
+    ["GRAD_envelope_short",0,0,0]
+    ["GRAD_envelope_vehicle",0,0,0]
     ["Land_CncBarrierMedium_F",0,0,0],
     ["Land_CncBarrierMedium4_F",0,0,0],
-    ["Land_Concrete_SmallWall_4m_F",0,0,0],
-    ["Land_Concrete_SmallWall_8m_F",0,0,0],
     ["Land_CncShelter_F",0,0,0],
     ["Land_CncWall1_F",0,0,0],
     ["Land_CncWall4_F",0,0,0],
@@ -388,7 +371,6 @@ elite_vehicles = [
     "CUP_B_nM1097_AVENGER_USA_WDL",                                     // HMMWV AA Avenger
     "CUP_B_M1165_GMV_WDL_USA",                                          // HMMWV Minigun
     "rhsusf_m1240a1_m2crows_usarmy_wd",                                 // M1277 MRAP .50 Crows
-    "B_Boat_Armed_01_minigun_F",                                        // Speedboat Minigun
     "rhsusf_stryker_m1132_m2_wd",                                       // Stryker Minesweeper .50 Crows
     "RHS_M2A3_BUSKIII_wd",                                              // M2 Bradley Up Armor
     "CUP_B_LAV25M240_USMC",                                             // LAV 25mm M240
