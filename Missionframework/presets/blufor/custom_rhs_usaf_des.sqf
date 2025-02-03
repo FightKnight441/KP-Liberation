@@ -125,11 +125,13 @@ air_vehicles = [
     ["RHS_CH_47F",200,100,200],                                         // CH-47
     ["RHS_CH_47F_cargo",200,100,200],                                   // CH-47 Cargo
     ["rhsusf_CH53E_USMC_GAU21",200,100,200],                            // CH-53
-    ["CUP_B_MV22_USMC_RAMPGUN",200,100,200],                            // MV-22
-    ["RHS_MELB_AH6M",200,300,200],                                      // AH-6
-    ["CUP_B_AC47_Spooky_USA",150,250,300],                              // AC-47 Spooky
-    ["CUP_B_CESSNA_T41_ARMED_USA",150,350,300],                         // T-41 Mescalero
-    ["B_UAV_02_dynamicLoadout_F",100,350,300]                           // Gray Hawk
+    ["CUP_B_MV22_USMC_RAMPGUN",300,50,300],                             // MV-22
+    ["RHS_MELB_AH6M",200,400,200],                                      // AH-6
+    ["CUP_B_AC47_Spooky_USA",200,100,100],                              // AC-47 Spooky
+    ["CUP_B_CESSNA_T41_ARMED_USA",200,200,100],                         // T-41 Mescalero
+    ["RHSGREF_A29B_HIDF",300,300,300],                                  // A-29 Super Tucano
+    ["B_UAV_02_dynamicLoadout_F",300,200,200],                          // Gray Hawk
+    ["RHS_C130J_Cargo",300,0,300]                                       // C-130 (Cargo)
 ];
 
 static_vehicles = [
@@ -384,5 +386,6 @@ elite_vehicles = [
     "RHS_MELB_AH6M",                                                    // AH-6
     "CUP_B_AC47_Spooky_USA",                                            // AC-47 Spooky
     "CUP_B_CESSNA_T41_ARMED_USA",                                       // T-41 Mescalero
+    "RHSGREF_A29B_HIDF",                                                // A-29 Super Tucano
     "B_UAV_02_dynamicLoadout_F"                                         // Gray Hawk
 ];
