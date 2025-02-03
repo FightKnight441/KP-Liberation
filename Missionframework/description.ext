@@ -248,3 +248,30 @@ class CfgTaskDescriptions {
 #include "KP\KPGUI\KPGUI_defines.hpp"
 #include "KP\KPPLM\ui\KPPLM_dialog.hpp"
 
+class ACEX_Fortify_Presets {
+    class my_Categ {
+        displayName = "BN_S3";
+        objects[] = {
+            {"Land_BagFence_Long_F", 0, "Sandbag D"},
+            {"Land_BagFence_Short_F", 0, "SandBag D"},
+            {"Land_BagFence_End_F", 0, "SandBag D"},
+            {"Land_BagFence_Round_F", 0, "SandBag D"},
+            {"Land_BagFence_01_long_green_F", 0, "SandBag W"},
+            {"Land_BagFence_01_short_green_F", 0, "SandBag W"},
+            {"Land_BagFence_01_end_green_F", 0, "SandBag W"},
+            {"Land_BagFence_01_round_green_F", 0, "SandBag W"},
+            {"Land_Plank_01_4m_F", 0, "Planks"},
+            {"Land_Plank_01_8m_F", 0, "Planks"},
+            {"Paleta1", 0, "Planks"},
+            {"Land_TimberLog_01_F", 0, "Logs"},
+            {"Land_TimberLog_05_F", 0, "Logs"},
+            {"Land_WoodenLog_F", 0, "Logs"},
+            {"Land_PortableLight_02_quad_olive_F", 0, "Lights"},
+            {"Land_Camping_Light_F", 0, "Lights"},
+            {"Campfire_burning_F", 0, "Camp"},
+            {"Land_CampingChair_V1_F", 0, "Camp"},
+			{"ShootingRange_ACR", 0, "Camp"},
+			{"Land_ClutterCutter_large_F", 0, "Misc"}
+        };
+    };
+};
