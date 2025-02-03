@@ -77,23 +77,23 @@ infantry_units = [
 light_vehicles = [
     ["B_Quadbike_01_F",25,0,25],                                        // Quad Bike
     ["rhsusf_mrzr4_d",25,0,50],                                         // MRZR 4
-    ["rhsusf_m1025_d",50,0,50],                                       // M1025 HMMWV
+    ["rhsusf_m1025_d",50,0,50],                                         // M1025 HMMWV
     ["rhsusf_m998_d_2dr",25,0,50],                     	                // M1097 HMMWV 2Door
-    ["rhsusf_m1151_m240_v1_usarmy_d",75,25,50],                       // M1151 HMMWV M240
-    ["rhsusf_m1043_d_m2",75,50,50],                                   // M1043 HMMWV .50
-    ["CUP_B_M1165_GMV_USA",75,75,50],                                 // M1165 HMMWV Minigun
-    ["CUP_B_nM1025_SOV_Mk19_USA_DES",100,100,50],                      // M1025 Recon SOV Mk19
+    ["rhsusf_m1151_m240_v1_usarmy_d",75,25,50],                         // M1151 HMMWV M240
+    ["rhsusf_m1043_d_m2",75,50,50],                                     // M1043 HMMWV .50
+    ["CUP_B_M1165_GMV_USA",75,75,50],                                   // M1165 HMMWV Minigun
+    ["CUP_B_nM1025_SOV_Mk19_USA_DES",100,100,50],                       // M1025 Recon SOV Mk19
 	["rhsusf_m1165a1_gmv_m134d_m240_socom_d",100,75,50],				// HMMWV GMV Minigun
 	["rhsusf_m1165a1_gmv_mk19_m240_socom_d",100,100,50],				// HMMWV GMV Mk19
-    ["CUP_B_nM1097_AVENGER_USA_DES",100,250,50],                       // HMMWV AA Avenger
+    ["CUP_B_nM1097_AVENGER_USA_DES",100,250,50],                        // HMMWV AA Avenger
     ["rhsusf_m1240a1_m240_usarmy_d",100,100,100],                       // M1240 MRAP M240
     ["rhsusf_m1240a1_m2crows_usarmy_d",100,150,100],                    // M1277 MRAP .50 Crows
     ["rhsusf_M1230_M2_usarmy_d",100,50,100],                            // MRAP Transport .50
     ["B_Truck_01_flatbed_F",10,10,10],                                  // HEMTT Flatbed
     ["B_Truck_01_fuel_F",10,10,100],                                    // HEMTT Fuel
-    ["CUP_B_RHIB_USMC",50,50,50],                                      // RHIB .50
-    ["CUP_B_RHIB2Turret_USMC",50,100,50],                              // RHIB .50 Mk19
-    ["CUP_I_LCVP_RACS",50,50,100],                                     // LCVP Landing Craft
+    ["CUP_B_RHIB_USMC",50,50,50],                                       // RHIB .50
+    ["CUP_B_RHIB2Turret_USMC",50,100,50],                               // RHIB .50 Mk19
+    ["CUP_I_LCVP_RACS",50,50,100],                                      // LCVP Landing Craft
     ["B_Boat_Armed_01_minigun_F",125,100,100],                          // Speedboat Minigun
     ["B_UGV_02_Demining_F",10,10,10]                                    // ED-1D EOD Drone
 ];
@@ -149,8 +149,8 @@ static_vehicles = [
 buildings = [
     ["Land_Cargo_HQ_V3_F",0,0,0],										// Cargo HQ
     ["Land_Cargo_House_V3_F",0,0,0],									// Cargo House
-    ["Land_Cargo_Patrol_V3_F",0,0,0],									// Cargo House
-    ["Land_Cargo_Tower_V3_F",0,0,0],									// CArgo Tower
+    ["Land_Cargo_Patrol_V3_F",0,0,0],									// Cargo Post
+    ["Land_Cargo_Tower_V3_F",0,0,0],									// Cargo Tower
     ["Flag_NATO_F",0,0,0],												// NATO Flag
     ["Flag_US_F",0,0,0],												// US Flag
     ["Flag_UK_F",0,0,0],												// UK Flag
@@ -161,22 +161,22 @@ buildings = [
     ["CamoNet_BLUFOR_F",0,0,0],											// Camo Net 3 Sides Open
     ["CamoNet_BLUFOR_open_F",0,0,0],									// Camo Net 4 Sides Open
     ["CamoNet_BLUFOR_big_F",0,0,0],										// Camo Net 1 Sides Open
-    ["ShedBig",0,0,0],
-    ["Shed",0,0,0],
-    ["Land_PortableLight_single_F",0,0,0],
-    ["Land_PortableLight_double_F",0,0,0],
-    ["Land_LampSolar_F",0,0,0],
-    ["Land_LampHalogen_F",0,0,0],
-    ["Land_LampStreet_small_F",0,0,0],
-    ["Land_LampAirport_F",0,0,0],
+    ["ShedBig",0,0,0],                                                  // Camo Net Corridor
+    ["Shed",0,0,0],                                                     // Camo Net Corner
+    ["Land_PortableLight_single_F",0,0,0],                              // Portable Light Single
+    ["Land_PortableLight_double_F",0,0,0],                              // Portable Light Double
+    ["Land_LampSolar_F",0,0,0],                                         // Street Light Solar
+    ["Land_LampHalogen_F",0,0,0],                                       // Stadium Light
+    ["Land_LampStreet_small_F",0,0,0],                                  // Street Light
+    ["Land_LampAirport_F",0,0,0],                                       // Airport Light
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["Land_HelipadRescue_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
-    ["PortableHelipadLight_01_blue_F",0,0,0],
-    ["PortableHelipadLight_01_green_F",0,0,0],
-    ["PortableHelipadLight_01_red_F",0,0,0],
-    ["Land_CampingChair_V1_F",0,0,0],
-    ["Land_CampingChair_V2_F",0,0,0],
-    ["Land_CampingTable_F",0,0,0],
+    ["PortableHelipadLight_01_blue_F",0,0,0],                           // Helipad Light Blue
+    ["PortableHelipadLight_01_green_F",0,0,0],                          // Helipad Light Green
+    ["PortableHelipadLight_01_red_F",0,0,0],                            // Helipad Light Red
+    ["Land_CampingChair_V1_F",0,0,0],                                   // Camping Chair
+    ["Land_CampingChair_V2_F",0,0,0],                                   // Folding Chair
+    ["Land_CampingTable_F",0,0,0],                                      // Camping table
     ["MapBoard_altis_F",0,0,0],
     ["MapBoard_stratis_F",0,0,0],
     ["MapBoard_Malden_F",0,0,0],
@@ -199,14 +199,14 @@ buildings = [
     ["Land_BarrelWater_grey_F",0,0,0],
     ["Land_WaterBarrel_F",0,0,0],
     ["Land_WaterTank_F",0,0,0],
-    ["ShootingRange_ACR",0,0,0],
-    ["Land_ShootingPos_Roof_01_F",0,0,0],
-    ["ShedSmall",0,0,0],
+    ["ShootingRange_ACR",0,0,0],                                        // Tin Rof
+    ["Land_ShootingPos_Roof_01_F",0,0,0],                               // Tin Roof w/ Bench
+    ["ShedSmall",0,0,0],                                                // Sandbag w/ Camo Net
     ["Land_BagFence_Round_F",0,0,0],									// Sandbag Round
-    ["Land_BagFence_Short_F",0,0,0], 								// Sandbag Short
+    ["Land_BagFence_Short_F",0,0,0], 								    // Sandbag Short
     ["Land_BagFence_Long_F",0,0,0], 									// Sandbag Long
-    ["Land_BagFence_Corner_F",0,0,0],								// Sandbag Corner
-    ["Land_BagFence_End_F",0,0,0], 									// Sandbag End
+    ["Land_BagFence_Corner_F",0,0,0],							    	// Sandbag Corner
+    ["Land_BagFence_End_F",0,0,0], 								    	// Sandbag End
     ["Land_BagBunker_Small_F",0,0,0],									// Sandbag Bunker
     ["Land_BagBunker_Large_F",0,0,0],									// Sangbag Bunker Large
 	["Land_BagBunker_Tower_F",0,0,0],									// H Barrier Bunker Tower
@@ -219,23 +219,23 @@ buildings = [
     ["Land_HBarrierWall_corner_F",0,0,0],								// H Barrier Wall Corner
     ["Land_HBarrierWall_corridor_F",0,0,0],								// H Barrier Corridor
     ["Land_HBarrierTower_F",0,0,0],										// H Barrier Watchtower
-    ["GRAD_envelope_giant",0,0,0]
-    ["GRAD_envelope_long",0,0,0]
-    ["GRAD_envelope_short",0,0,0]
-    ["GRAD_envelope_vehicle",0,0,0]
-    ["Land_CncBarrierMedium_F",0,0,0],
-    ["Land_CncBarrierMedium4_F",0,0,0],
-    ["Land_CncShelter_F",0,0,0],
-    ["Land_CncWall1_F",0,0,0],
-    ["Land_CncWall4_F",0,0,0],
+    ["GRAD_envelope_giant",0,0,0],                                      // Giant Trench
+    ["GRAD_envelope_long",0,0,0],                                       // Long Trench
+    ["GRAD_envelope_short",0,0,0],                                      // Short Trench
+    ["GRAD_envelope_vehicle",0,0,0],                                    // Vehicle Trench
+    ["Land_CncBarrierMedium_F",0,0,0],                                  // Concrete Barrier
+    ["Land_CncBarrierMedium4_F",0,0,0],                                 // Concrete Barrier Wall
+    ["Land_CncShelter_F",0,0,0],                                        // Concrete Shelter
+    ["Land_CncWall1_F",0,0,0],                                          // Concrete Wall
+    ["Land_CncWall4_F",0,0,0],                                          // Concrete Wall Long
     ["Land_Sign_WarningMilitaryArea_F",0,0,0],
     ["Land_Sign_WarningMilAreaSmall_F",0,0,0],
     ["Land_Sign_WarningMilitaryVehicles_F",0,0,0],
-    ["ACE_ConcertinaWire",0,0,0],
-    ["Land_Razorwire_F",0,0,0],
-    ["Land_CzechHedgehog_01_old_F",0,0,0],
-    ["Wire",0,0,0],
-    ["Land_ClutterCutter_large_F",0,0,0]
+    ["ACE_ConcertinaWire",0,0,0],                                       // Barbed Wire Long
+    ["Land_Razorwire_F",0,0,0],                                         // Barbed Wire
+    ["Land_CzechHedgehog_01_old_F",0,0,0],                              // Tanktrap
+    ["Wire",0,0,0],                                                     // Barbed Wire w/ Tanktrap
+    ["Land_ClutterCutter_large_F",0,0,0]                                // Grass Cutter
 ];
 
 support_vehicles = [
