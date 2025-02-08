@@ -151,15 +151,5 @@ KPLIB_objectInits = [
             _this allowFleeing 0;
         },
         true
-    ],
-    [
-        ["Land_TripodScreen_01_dual_v1_black_F"],
-        {
-            [_this] spawn {
-                params ["_screen"];
-                waitUntil {sleep 0.1; time > 0};
-                [_screen] remoteExecCall ["KPLIB_fnc_toggleCameraScreen", 0, _screen];
-            };
-        }
-    ]    
+    ]   
 ];
