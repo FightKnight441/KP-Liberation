@@ -92,7 +92,30 @@ KPLIB_objectInits = [
     ],
     [
         KP_liberation_medical_facilities,
-        {_this setVariable ["ace_medical_isMedicalFacility", true, true];}
+        {
+            _this setVariable ["ace_medical_isMedicalFacility", true, true];
+
+            // Ensure this runs on clients so the addAction works properly
+            _this spawn {
+                params ["_facility"];
+                waitUntil {sleep 0.1; time > 0}; // Ensure mission has started
+
+                if (isNil { _facility getVariable "HealActionAdded" }) then 
+                { 
+                    _facility addAction [
+                        "<t color='#FF0000'>Full Heal Self</t>",  // Action text in red
+                        { player call ace_medical_treatment_fnc_fullHealLocal; }, // Heal only the player using the action
+                        [], 
+                        1, 
+                        true, 
+                        true, 
+                        "", 
+                        "_this distance _target < 3" // Only show the action if within 3 meters
+                    ];
+                    _facility setVariable ["HealActionAdded", true, true]; // Sync across clients
+                };
+            };
+        }
     ],
     [
         KP_liberation_medical_vehicles,
@@ -128,5 +151,15 @@ KPLIB_objectInits = [
             _this allowFleeing 0;
         },
         true
-    ]
+    ],
+    [
+        ["Land_TripodScreen_01_dual_v1_black_F"],
+        {
+            [_this] spawn {
+                params ["_screen"];
+                waitUntil {sleep 0.1; time > 0};
+                [_screen] remoteExecCall ["KPLIB_fnc_toggleCameraScreen", 0, _screen];
+            };
+        }
+    ]    
 ];
