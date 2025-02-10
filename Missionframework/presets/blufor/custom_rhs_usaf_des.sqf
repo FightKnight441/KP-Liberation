@@ -123,15 +123,17 @@ air_vehicles = [
     ["RHS_UH1Y_UNARMED",150,0,150],                                     // UH-1 Unarmed
     ["RHS_UH60M",150,100,150],                                          // UH-60
     ["RHS_CH_47F",200,100,200],                                         // CH-47
-    ["RHS_CH_47F_cargo",200,100,200],                                   // CH-47 Cargo
     ["rhsusf_CH53E_USMC_GAU21",200,100,200],                            // CH-53
     ["CUP_B_MV22_USMC_RAMPGUN",300,50,300],                             // MV-22
     ["RHS_MELB_AH6M",200,200,200],                                      // AH-6
-    ["CUP_B_AC47_Spooky_USA",200,100,100],                              // AC-47 Spooky
+    ["RHS_UH1Y",200,200,200],                                           // UH-1 Armed
+    ["CUP_B_MH60L_DAP_4x_US",250,300,200],                              // MH-60L Armed
     ["CUP_B_CESSNA_T41_ARMED_USA",200,200,100],                         // T-41 Mescalero
     ["RHSGREF_A29B_HIDF",300,300,300],                                  // A-29 Super Tucano
-    ["B_UAV_02_dynamicLoadout_F",300,200,200],                          // Gray Hawk
-    ["RHS_C130J_Cargo",300,0,300]                                       // C-130 (Cargo)
+    ["B_UAV_02_dynamicLoadout_F",300,200,200],                          // YABHON-R3
+    ["CUP_B_USMC_DYN_MQ9",300,400,200],                                 // MQ-9 Reaper
+    ["RHS_C130J",300,0,300],                                            // C-130 RHS
+    ["CUP_B_C130J_Cargo_USMC",300,0,300]                                // C-130 (Cargo) CUP
 ];
 
 static_vehicles = [
@@ -153,6 +155,11 @@ buildings = [
     ["Land_Cargo_House_V3_F",0,0,0],									// Cargo House
     ["Land_Cargo_Patrol_V3_F",0,0,0],									// Cargo Post
     ["Land_Cargo_Tower_V3_F",0,0,0],									// Cargo Tower
+    ["Land_MedicalTent_01_NATO_generic_outer_F",0,0,0],                 // Field Tent Open
+    ["Land_MedicalTent_01_NATO_generic_inner_F",0,0,0],                 // Field Tent Walled
+    ["Land_ConnectorTent_01_NATO_open_F",0,0,0],                        // Field Tent Connector 2-way
+    ["Land_ConnectorTent_01_NATO_cross_F",0,0,0],                       // Field Tent Connecter 4-way
+    ["Land_ConnectorTent_01_NATO_closed_F",0,0,0],                      // Field Tent Connector 1-way
     ["Flag_NATO_F",0,0,0],												// NATO Flag
     ["Flag_US_F",0,0,0],												// US Flag
     ["Flag_UK_F",0,0,0],												// UK Flag
@@ -384,8 +391,10 @@ elite_vehicles = [
     "rhsusf_CH53E_USMC_GAU21",                                          // CH-53
     "CUP_B_MV22_USMC_RAMPGUN",                                          // MV-22
     "RHS_MELB_AH6M",                                                    // AH-6
-    "CUP_B_AC47_Spooky_USA",                                            // AC-47 Spooky
+    "RHS_UH1Y",                                                         // UH-1Y Gunship
+    "CUP_B_MH60L_DAP_4x_US",                                            // MH-60L
     "CUP_B_CESSNA_T41_ARMED_USA",                                       // T-41 Mescalero
     "RHSGREF_A29B_HIDF",                                                // A-29 Super Tucano
-    "B_UAV_02_dynamicLoadout_F"                                         // Gray Hawk
+    "B_UAV_02_dynamicLoadout_F",                                        // YABHON-R3
+    "CUP_B_USMC_DYN_MQ9"                                                // MQ-9 Reaper
 ];
