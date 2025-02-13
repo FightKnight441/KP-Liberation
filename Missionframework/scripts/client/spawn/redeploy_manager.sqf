@@ -222,8 +222,8 @@ while {true} do {
     };
 
     if (KP_liberation_mobilerespawn && (KP_liberation_respawn_time > time)) then {
-        hint format [localize "STR_RESPAWN_COOLDOWN_HINT", ceil ((KP_liberation_respawn_time - time) / 60)];
-        uiSleep 12;
+        hint format [localize "STR_RESPAWN_COOLDOWN_HINT", ceil ((KP_liberation_respawn_time - time))]; // was orignially minutes, now displays in seconds remaining
+        uiSleep 2;
         hint "";
     };
 };

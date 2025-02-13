@@ -6009,16 +6009,16 @@
             <Czech>Mobilní respawn cooldown (minuty)</Czech>
         </Key>
         <Key ID="STR_RESPAWN_COOLDOWN_HINT">
-            <Original>%1 minutes mobile respawn cooldown left.</Original>
-            <German>%1 Minuten Mobiler Respawn Cooldown übrig.</German>
-            <Spanish>%1 (minutos) tiempo de espera para uso del respawn móvil.</Spanish>
-            <Russian>Осталось %1 минут(-ы) задержки дислокации на КШМ.</Russian>
-            <Italian>Mancano ancora %1 minuti al respawn.</Italian>
-            <Chinesesimp>机动复活点还需要%1分钟冷却。</Chinesesimp>
-            <Chinese>機動重生點還需要 %1 分鐘冷卻。</Chinese>
-            <Portuguese>Falta(m) %1 minuto(s) de tempo de espera do respawn móvel.</Portuguese>
-            <Korean>%1 분 남음(재투입차량에서 재생대기시간)</Korean>
-            <Czech>Zbývá %1 minut na mobilní respawn.</Czech>
+            <Original>%1 seconds mobile respawn cooldown left.</Original>
+            <German>%1 Sekunden Mobiler Respawn Cooldown übrig.</German>
+            <Spanish>%1 (segundos) tiempo de espera para uso del respawn móvil.</Spanish>
+            <Russian>Осталось %1 секунд(-ы) задержки дислокации на КШМ.</Russian>
+            <Italian>Mancano ancora %1 secondi al respawn.</Italian>
+            <Chinesesimp>机动复活点还需要%1秒冷却。</Chinesesimp>
+            <Chinese>機動重生點還需要 %1 秒冷卻。</Chinese>
+            <Portuguese>Falta(m) %1 segundo(s) de tempo de espera do respawn móvel.</Portuguese>
+            <Korean>%1 초 남음(재투입차량에서 재생대기시간)</Korean>
+            <Czech>Zbývá %1 sekund na mobilní respawn.</Czech>
         </Key>
         <Key ID="STR_CR_RESISTANCE_KILLMSG">
             <Original>An allied resistance fighter named %1 was killed!</Original>
