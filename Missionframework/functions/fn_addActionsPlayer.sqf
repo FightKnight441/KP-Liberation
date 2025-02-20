@@ -113,11 +113,10 @@ _player addAction [
         && {
             _originalTarget getVariable ['KPLIB_fobDist', 99999] < 20
             || {_originalTarget getVariable ['KPLIB_isNearArsenal', false]}
-            || {_originalTarget getVariable ['KPLIB_isNearMobRespawn', false]}
             || {_originalTarget getVariable ['KPLIB_isNearStart', false]}
         }
         && {build_confirmed isEqualTo 0}
-    "
+    " //removed `|| {_originalTarget getVariable ['KPLIB_isNearMobRespawn', false]}` from this to disallow arsenal access at mobile respawn
 ];
 
 // Build
