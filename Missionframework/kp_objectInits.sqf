@@ -95,31 +95,31 @@ KPLIB_objectInits = [
         {
             _this setVariable ["ace_medical_isMedicalFacility", true, true];
 
-            // Ensure this runs on clients so the addAction works properly
-            _this spawn {
-                params ["_facility"];
-                waitUntil {sleep 0.1; time > 0}; // Ensure mission has started
-
-                if (isNil { _facility getVariable "HealActionAdded" }) then 
-                { 
-                    _facility addAction [
-                        "<t color='#FF0000'>Full Heal Self</t>",  // Action text in red
-                        { player call ace_medical_treatment_fnc_fullHealLocal; }, // Heal only the player using the action
-                        [], 
-                        1, 
-                        true, 
-                        true, 
-                        "", 
-                        "_this distance _target < 3" // Only show the action if within 3 meters
-                    ];
-                    _facility setVariable ["HealActionAdded", true, true]; // Sync across clients
-                };
+            [_this] spawn{
+                params ["_building"];
+                waitUntil {sleep 0.1; time > 0};
+                [_building] remoteExecCall ["KPLIB_fnc_addActionsMedFac", 0, _building];
             };
         }
     ],
     [
         KP_liberation_medical_vehicles,
         {_this setVariable ["ace_medical_isMedicalVehicle", true, true];}
+    ],
+        
+    [ // Add Cleanup Action to Trash Cans
+        [
+            "Land_GarbageBin_01_F",
+            "TrashBagHolder_01_F",
+            "Land_WheelieBin_01_F"
+        ],
+        {
+            [_this] spawn {
+                params ["_trash"];
+                waitUntil {sleep 0.1; time > 0};
+                [_trash] remoteExecCall ["KPLIB_fnc_addActionsCleanup", 0, _trash];
+            };
+        }
     ],
 
     // Hide Cover on big GM trucks

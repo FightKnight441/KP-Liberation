@@ -2,6 +2,8 @@ class KPLIB {
     class functions {
         file = "functions";
 
+        class addActionsCleanup         {};
+        class addActionsMedFac          {};
         class addActionsFob             {};
         class addActionsPlayer          {};
         class addObjectInit             {};
