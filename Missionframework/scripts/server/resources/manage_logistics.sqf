@@ -20,7 +20,7 @@ while {GRLIB_endgame == 0} do {
             private _locRes = -1;
             switch (_x select 7) do {
                 case 0: {};
-                case 1;
+                case 1: {};     // This was orignillay empty: `case 1;` TO `case 1: {};` Makes sense, I think? -FightKnight
                 case 3: {
                     if ((_x select 8) > 1) then {
                         switch (_x select 7) do {case 1: {_locPos = 2; _locRes = 4;}; case 3: {_locPos = 3; _locRes = 5;};};
