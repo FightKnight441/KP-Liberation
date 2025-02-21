@@ -66,7 +66,8 @@ if (isServer) then {
         // Disconnect UAV from player on death
         _unit connectTerminalToUAV objNull;
         // Eject Player from vehicle
-        if (vehicle _unit != _unit) then {moveOut _unit;};
+        if (objectParent _unit != _unit) then {moveOut _unit;};
+        hidebody _unit; // player bodies shouldnt be scattered everywhere now
     };
 
     // Check for Man or Vehicle
@@ -168,8 +169,10 @@ if (isServer) then {
 };
 
 // Body/Wreck deletion after cleanup delay
-if (isServer && !isplayer _unit) then {
+if (isServer && !isPlayer _unit) then {
+    //format ["DEBUG Running isServer && !isPlayer _unit"] remoteExec ["systemChat"];
     sleep GRLIB_cleanup_delay;
+    if (objectParent _unit != _unit) then {moveOut _unit;}; // should prevent the bugging out of vic seats when ai deleted
     hidebody _unit;
     sleep 10;
     deleteVehicle _unit;
