@@ -98,6 +98,14 @@ while {true} do {
             ];
         } forEach GRLIB_all_fobs;
 
+        // // Add all blufor sectors to the respawn list (commented out just in case we want to add this in the future)
+        // {
+        //     KPLIB_respawnPositionsList pushBack [
+        //         format ["%1",  markerText _x],
+        //         markerPos _x
+        //     ];
+        // } forEach blufor_sectors;
+
         if (KP_liberation_mobilerespawn) then {
             if (KP_liberation_respawn_time <= time) then {
                 private _mobileRespawns = [] call KPLIB_fnc_getMobileRespawns;
