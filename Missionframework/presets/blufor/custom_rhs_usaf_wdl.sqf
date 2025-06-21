@@ -46,43 +46,45 @@ KP_liberation_fuel_crate = "CargoNet_01_barrels_F";                     // This 
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 infantry_units = [
-    ["rhsusf_army_ocp_riflemanl",15,0,0],                               // Rifleman (Light)
-    ["rhsusf_army_ocp_rifleman",20,0,0],                                // Rifleman
-    ["rhsusf_army_ocp_riflemanat",30,0,0],                              // Rifleman (AT)
-    ["rhsusf_army_ocp_grenadier",25,0,0],                               // Grenadier
-    ["rhsusf_army_ocp_autorifleman",25,0,0],                            // Autorifleman
-    ["rhsusf_army_ocp_machinegunner",35,0,0],                           // Heavygunner
-    ["rhsusf_army_ocp_marksman",30,0,0],                                // Marksman
-    ["rhsusf_army_ocp_javelin",50,10,0],                                // AT Specialist
-    ["rhsusf_army_ocp_aa",50,10,0],                                     // AA Specialist
-    ["rhsusf_army_ocp_medic",30,0,0],                                   // Combat Life Saver
-    ["rhsusf_army_ocp_engineer",30,0,0],                                // Engineer
-    ["rhsusf_army_ocp_explosives",30,0,0],                              // Explosives Specialist
-    ["rhsusf_usmc_recon_marpat_wd_rifleman",20,0,0],                    // Recon Rifleman
-    ["rhsusf_usmc_recon_marpat_wd_rifleman_at",30,0,0],                 // Recon Rifleman (AT)
-    ["rhsusf_usmc_recon_marpat_wd_autorifleman",25,0,0],                // Recon Autorifleman
-    ["rhsusf_usmc_recon_marpat_wd_machinegunner",35,0,0],               // Recon Machine Gunner
-    ["rhsusf_usmc_recon_marpat_wd_marksman",30,0,0],                    // Recon Marksman
-    ["rhsusf_usmc_recon_marpat_wd_sniper_M107",70,5,0],                 // Recon Sniper (M107)
-    ["rhsusf_army_ocp_sniper",70,5,0],                                  // Sniper
-    ["rhsusf_army_ocp_sniper_m107",70,5,0],                             // Sniper (M107)
-    ["rhsusf_army_ocp_sniper_m24sws",70,5,0],                           // Sniper (M24 SWS)
-    ["rhsusf_army_ocp_combatcrewman",10,0,0],                           // Crewman
-    ["rhsusf_army_ocp_rifleman_101st",20,0,0],                          // Para Trooper
-    ["rhsusf_army_ocp_helicrew",10,0,0],                                // Helicopter Crew
-    ["rhsusf_army_ocp_helipilot",10,0,0],                               // Helicopter Pilot
-    ["rhsusf_airforce_jetpilot",10,0,0]                                 // Pilot
+    ["rhsusf_army_ocp_riflemanl",1,0,0],                               // Rifleman (Light)
+    ["rhsusf_army_ocp_rifleman",1,0,0],                                // Rifleman
+    ["rhsusf_army_ocp_riflemanat",1,0,0],                              // Rifleman (AT)
+    ["rhsusf_army_ocp_grenadier",1,0,0],                               // Grenadier
+    ["rhsusf_army_ocp_autorifleman",1,0,0],                            // Autorifleman
+    ["rhsusf_army_ocp_machinegunner",1,0,0],                           // Heavygunner
+    ["rhsusf_army_ocp_marksman",1,0,0],                                // Marksman
+    ["rhsusf_army_ocp_javelin",1,5,0],                                // AT Specialist
+    ["rhsusf_army_ocp_aa",1,5,0],                                     // AA Specialist
+    ["rhsusf_army_ocp_medic",1,0,0],                                   // Combat Life Saver
+    ["rhsusf_army_ocp_engineer",1,0,0],                                // Engineer
+    ["rhsusf_army_ocp_explosives",1,0,0],                              // Explosives Specialist
+    ["rhsusf_usmc_recon_marpat_wd_rifleman",1,0,0],                    // Recon Rifleman
+    ["rhsusf_usmc_recon_marpat_wd_rifleman_at",1,0,0],                 // Recon Rifleman (AT)
+    ["rhsusf_usmc_recon_marpat_wd_autorifleman",1,0,0],                // Recon Autorifleman
+    ["rhsusf_usmc_recon_marpat_wd_machinegunner",1,0,0],               // Recon Machine Gunner
+    ["rhsusf_usmc_recon_marpat_wd_marksman",1,0,0],                    // Recon Marksman
+    ["rhsusf_usmc_recon_marpat_wd_sniper_M107",1,0,0],                 // Recon Sniper (M107)
+    ["rhsusf_army_ocp_sniper",1,0,0],                                  // Sniper
+    ["rhsusf_army_ocp_sniper_m107",1,0,0],                             // Sniper (M107)
+    ["rhsusf_army_ocp_sniper_m24sws",1,0,0],                           // Sniper (M24 SWS)
+    ["rhsusf_army_ocp_combatcrewman",1,0,0],                           // Crewman
+    ["rhsusf_army_ocp_rifleman_101st",1,0,0],                          // Para Trooper
+    ["rhsusf_army_ocp_helicrew",1,0,0],                                // Helicopter Crew
+    ["rhsusf_army_ocp_helipilot",1,0,0],                               // Helicopter Pilot
+    ["rhsusf_airforce_jetpilot",1,0,0]                                 // Pilot
 ];
 
 light_vehicles = [
     ["B_Quadbike_01_F",25,0,25],                                        // Quad Bike
     ["rhsusf_mrzr4_d",25,0,50],                                         // MRZR 4
-    ["rhsusf_m1025_w",50,0,50],                                         // M1025 HMMWV
+    ["CUP_B_nM1151_Unarmed_USA_WDL",50,0,50],                           // M1151 HMMWV
+    ["CUP_B_nM997_USA_WDL",25,0,25],   			                        // M997 HMMWV Ambulance
     ["rhsusf_m998_w_2dr_halftop",25,0,50],                              // M1097 HMMWV 2Door
-    ["rhsusf_m1151_m240_v1_usarmy_wd",75,25,50],                        // M1151 HMMWV M240
-    ["rhsusf_m1043_w_m2",75,50,50],                                     // M1043 HMMWV .50
+    ["CUP_B_nM1151_ogpk_m240_USA_WDL",75,25,50],                        // M1151 HMMWV M240
+    ["CUP_B_nM1151_ogpk_m2_USA_WDL",75,50,50],                          // M1151 HMMWV .50
+    ["CUP_B_nM1151_ogpk_mk19_USA_WDL",100,100,50],                      // M1151 HMMWV Mk19
     ["CUP_B_M1165_GMV_WDL_USA",75,75,50],                               // M1165 HMMWV Minigun
-    ["CUP_B_nM1025_SOV_Mk19_USA_WDL",100,100,50],                       // M1025 Recon SOV Mk19
+    ["rhsusf_m966_w",75,75,50],                                         // M1165 HMMWV Tow
     ["CUP_B_nM1097_AVENGER_USA_WDL",100,250,50],                        // HMMWV AA Avenger
     ["rhsusf_m1240a1_m240_usmc_wd",100,100,100],                        // M1240 MRAP M240
     ["rhsusf_m1240a1_m2crows_usarmy_wd",100,150,100],                   // M1277 MRAP .50 Crows
@@ -99,10 +101,11 @@ light_vehicles = [
 heavy_vehicles = [
     ["rhsusf_m113_usarmy",100,50,100],                                  // M113 .50
     ["rhsusf_m113_usarmy_MK19_90",100,75,100],                          // M113 Mk19
-    ["CUP_B_M1133_MEV_Woodland",150,0,100],                             // Stryker Ambulance
+    ["CUP_B_M1133_MEV_Woodland",75,0,75],                               // Stryker Ambulance
     ["rhsusf_stryker_m1127_m2_wd",150,100,150],                         // Stryker .50 Laser Des
     ["rhsusf_stryker_m1132_m2_wd",150,150,150],                         // Stryker Minesweeper .50 CROWS
     ["CUP_B_M1128_MGS_Woodland",150,250,150],                           // Stryker MGS
+    ["rhsusf_M1117_W",100,100,100],                                     // M1117 ASV
     ["CUP_B_AAV_USMC",150,100,100],                                     // Amphibious Assault Vehicle 40mm .50
     ["CUP_B_LAV25_HQ_USMC",150,50,150],                                 // LAV M240
     ["CUP_B_LAV25M240_USMC",150,200,150],                               // LAV 25mm M240
@@ -206,6 +209,10 @@ buildings = [
     ["Land_BarrelWater_grey_F",0,0,0],
     ["Land_WaterBarrel_F",0,0,0],
     ["Land_WaterTank_F",0,0,0],
+    ["Land_WaterTank_F",0,0,0],
+    ["Land_GarbageBin_01_F",0,0,0],										// Garbage Cleanups
+    ["TrashBagHolder_01_F",0,0,0],										// ^
+    ["Land_WheelieBin_01_F",0,0,0],										// ^
     ["ShootingRange_ACR",0,0,0],                                        // Tin Roof
     ["Land_ShootingPos_Roof_01_F",0,0,0],                               // Tin Roof w/ Bench
     ["ShedSmall",0,0,0],                                                // Sandbag w/ Camo Net
